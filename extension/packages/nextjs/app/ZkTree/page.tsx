@@ -466,7 +466,7 @@ const ZkTree: NextPage = () => {
             onChange={value => setLeafForNullifier(value)}
           />
           </div>
-          <div className="pt-3 py-5 -mt-3">
+          <div className="pt-3 py-5">
             <button className="btn btn-primary" onClick={getNullifierHash}
                     disabled={indexForNullifier == "" || hashedSecretForNullifier == "" || callerForNullifier == "" || leafForNullifier == ""}>
               Hash
