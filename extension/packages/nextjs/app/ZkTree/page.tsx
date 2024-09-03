@@ -321,7 +321,7 @@ const ZkTree: NextPage = () => {
           </p>
           <p className="text-center text-lg">
             Here you can find basic components to get started. More info can be found in{" "}
-              <Link href="https://github.com/nzmpi?tab=repositories" passHref className="link">
+              <Link href="https://github.com/nzmpi/ZkTree-extension-se2/blob/master/README.md" passHref className="link">
                 README
               </Link>
               .
