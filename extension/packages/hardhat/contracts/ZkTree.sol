@@ -16,11 +16,13 @@ contract ZkTree {
     bytes32 constant ZERO_HASH = 0x290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563;
     address immutable public owner;
     // the merkle root when i-th leaf is updated
-    mapping(uint256 index => bytes32) merkleRoots;
+    // index => merkle root
+    mapping(uint256 => bytes32) merkleRoots;
     // current tree
-    mapping(uint256 level => mapping(uint256 index => bytes32)) tree;
+    // level => index => hash
+    mapping(uint256 => mapping(uint256 => bytes32)) tree;
     // used nullifiers
-    mapping(bytes32 nullifierHash => bool) nullifiers;
+    mapping(bytes32 => bool) nullifiers;
     // the verifier is deployed at 0x10440e2a89225CBC9D0C542D9d510744D94D9FbF on Sepolia
     IUltraVerifier ultraVerifier;
     // keep track of used indices
