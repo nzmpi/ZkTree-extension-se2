@@ -7,7 +7,7 @@ This extension is build as a core part for more complex projects that need ZK Me
 
 ## Installation
 
-Just use `npx create-eth@latest -e nzmpi/ZkTree-extension-se2` to create a new SE-2 project with this extension.
+Just use `npx create-eth@latest -e nzmpi/ZkTree-extension-se2` to create a new SE-2 project with this extension. Then update the owner of the contract [here](https://github.com/nzmpi/ZkTree-extension-se2/blob/master/extension/packages/hardhat/deploy/01_deploy_ZkTree.ts#L35) (this will be fixed later). 
 
 ## What is it about?
 
