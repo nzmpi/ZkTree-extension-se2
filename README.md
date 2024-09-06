@@ -1,6 +1,6 @@
 # ZkTree
 
-This is an extension for [SE-2](https://github.com/scaffold-eth/scaffold-eth-2), which implement a zero knowledge Merkle tree. 
+This is an extension for [SE-2](https://github.com/scaffold-eth/scaffold-eth-2), which implements a zero knowledge Merkle tree. 
 I made it as general as possible to make it easy to use in different projects. 
 
 This extension is build as a core part for more complex projects that need ZK Merkle trees. 
