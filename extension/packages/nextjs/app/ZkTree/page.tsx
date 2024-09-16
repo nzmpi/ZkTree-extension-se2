@@ -11,7 +11,7 @@ import { Noir, InputMap } from "@noir-lang/noir_js";
 import { CheckCircleIcon, DocumentDuplicateIcon } from "@heroicons/react/24/outline";
 import { AddressInput, Bytes32Input, BytesInput, IntegerInput } from "~~/components/scaffold-eth";
 import { useScaffoldWriteContract, useScaffoldReadContract } from "~~/hooks/scaffold-eth";
-import circuit from "../../../hardhat/circuit/target/circuit.json";
+import circuit from "../../../circuit/target/circuit.json";
 
 const ZkTree: NextPage = () => {
   // max allowed number in the zk circuit
