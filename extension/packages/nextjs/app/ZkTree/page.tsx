@@ -234,7 +234,7 @@ const ZkTree: NextPage = () => {
     for (let i = 0; i < input.length; i++) {
       res += input[i] + ", ";
     }
-    res += res.slice(0, -2) + "]";
+    res = res.slice(0, -2) + "]";
     return <p className="flex items-center text-lg mt-1 ml-4">
       [{temp[0]},
       {" " + temp[1]},
