@@ -11,7 +11,7 @@ import { Noir, InputMap } from "@noir-lang/noir_js";
 import { CheckCircleIcon, DocumentDuplicateIcon } from "@heroicons/react/24/outline";
 import { AddressInput, Bytes32Input, BytesInput, IntegerInput } from "~~/components/scaffold-eth";
 import { useScaffoldWriteContract, useScaffoldReadContract } from "~~/hooks/scaffold-eth";
-import circuit from "../../../hardhat/circuit/target/circuit.json";
+import circuit from "../../../circuit/target/circuit.json";
 
 const ZkTree: NextPage = () => {
   // max allowed number in the zk circuit
@@ -234,7 +234,7 @@ const ZkTree: NextPage = () => {
     for (let i = 0; i < input.length; i++) {
       res += input[i] + ", ";
     }
-    res += res.slice(0, -2) + "]";
+    res = res.slice(0, -2) + "]";
     return <p className="flex items-center text-lg mt-1 ml-4">
       [{temp[0]},
       {" " + temp[1]},
